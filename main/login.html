@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdant Dining - Culinary Portal</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Ambient Background Accents -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <main class="login-container">
+    <!-- Brand Visual Panel -->
+    <section class="brand-panel">
+      <div class="brand-overlay"></div>
+      <div class="brand-content">
+        <div class="brand-badge">
+          <i class="fa-solid fa-utensils"></i>
+          <span>Fine Dining & Lounge</span>
+        </div>
+        <h1 class="brand-title">VERDANT</h1>
+        <p class="brand-tagline">สัมผัสประสบการณ์รสชาติแห่งธรรมชาติและความประณีตระดับเวิลด์คลาส</p>
+      </div>
+      <div class="brand-footer">
+        <span>Curated Gastronomy Experience</span>
+      </div>
+    </section>
+
+    <!-- Form Panel -->
+    <section class="form-panel">
+      <header class="form-header">
+        <h2>ยินดีต้อนรับกลับ</h2>
+        <p>เข้าสู่ระบบเพื่อจัดการการจองและสิทธิพิเศษของคุณ</p>
+      </header>
+
+      <form class="auth-form" onsubmit="event.preventDefault();">
+        <div class="input-group">
+          <label for="email">อีเมลหรือเบอร์โทรศัพท์</label>
+          <div class="input-wrapper">
+            <i class="fa-regular fa-envelope input-icon"></i>
+            <input type="email" id="email" placeholder="gourmet@verdant.com" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="label-row">
+            <label for="password">รหัสผ่าน</label>
+            <a href="#" class="forgot-link">ลืมรหัสผ่าน?</a>
+          </div>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock input-icon"></i>
+            <input type="password" id="password" placeholder="••••••••" required>
+          </div>
+        </div>
+
+        <div class="form-options">
+          <label class="custom-checkbox">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+            จดจำการเข้าสู่ระบบ
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <span>เข้าสู่ระบบ</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+
+        <div class="divider">
+          <span>หรือเข้าสู่ระบบด้วย</span>
+        </div>
+
+        <div class="social-login">
+          <button type="button" class="btn-social">
+            <i class="fa-brands fa-google"></i>
+            <span>Google</span>
+          </button>
+          <button type="button" class="btn-social">
+            <i class="fa-brands fa-apple"></i>
+            <span>Apple</span>
+          </button>
+        </div>
+      </form>
+
+      <footer class="form-footer">
+        <p>ยังไม่มีบัญชีสมาชิก? <a href="rege.html">สมัครสมาชิกใหม่</a></p>
+        <script src="auth.js"></script>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

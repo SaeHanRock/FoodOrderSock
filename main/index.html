@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERDANT - Fine Dining & Gastronomy Lounge</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Ambient Lights -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-symbol"><i class="fa-solid fa-leaf"></i></span>
+        <span class="logo-text">VERDANT</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#hero" class="nav-link active">หน้าแรก</a>
+        <a href="#about" class="nav-link">เรื่องราวของเรา</a>
+        <a href="#menu" class="nav-link">เมนูแนะนำ</a>
+        <a href="#reservation" class="nav-link">จองโต๊ะพิเศษ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- User Status Badge -->
+        <div id="user-display" class="user-pill hidden">
+          <i class="fa-solid fa-crown"></i>
+          <span id="user-name">คุณสมาชิก</span>
+        </div>
+
+        <button class="cart-btn" id="open-cart-btn" aria-label="เปิดตะกร้าสินค้า">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+
+        <a href="login.html" id="auth-nav-btn" class="btn-primary-outline">เข้าสู่ระบบ</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-star"></i>
+        <span>World-Class Culinary Art</span>
+      </div>
+      <h1 class="hero-title">
+        ศาสตร์แห่งรสชาติ<br>
+        ผสาน<span class="gradient-text">ธรรมชาติอันประณีต</span>
+      </h1>
+      <p class="hero-desc">
+        สัมผัสประสบการณ์ไฟน์ไดนิ่งที่คัดสรรวัตถุดิบออร์แกนิกชั้นเลิศ รังสรรค์เป็นคอร์สเมนูพิเศษเพื่อคุณในทุกช่วงเวลาสำคัญ
+      </p>
+      <div class="hero-cta-group">
+        <a href="#reservation" class="btn-hero-primary">
+          <span>สำรองที่นั่งล่วงหน้า</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+        <a href="#menu" class="btn-hero-secondary">
+          <i class="fa-solid fa-utensils"></i>
+          <span>สำรวจเมนู</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="hero-image-wrapper">
+      <div class="hero-image-card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format&fit=crop" alt="Signature Dish">
+        <div class="dish-floating-card">
+          <div class="dish-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="dish-info">
+            <strong>Signature Truffle Wagyu</strong>
+            <span>Chef's Recommendation 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight Features Section -->
+  <section id="about" class="features-section">
+    <div class="section-header">
+      <span class="subtitle">EXPERIENCE EXCELLENCE</span>
+      <h2>มาตรฐานระดับมิชลินเพื่อค่ำคืนสุดพิเศษ</h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+        <h3>100% Organic Sourcing</h3>
+        <p>คัดสรรวัตถุดิบสดใหม่จากฟาร์มเกษตรอินทรีย์ยั่งยืน ส่งตรงถึงครัวทุกเช้า</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-wine-glass-empty"></i></div>
+        <h3>Curated Wine Pairing</h3>
+        <p>ซอมเมอลิเยร์มืออาชีพพร้อมแนะนำไวน์วินเทจที่เข้าคู่กับจานโปรดของคุณอย่างลงตัว</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+        <h3>Private Dining Suites</h3>
+        <p>บรรยากาศส่วนตัวหรูหรา พร้อมการบริการระดับเอ็กซ์คลูซีฟสำหรับกลุ่มและครอบครัว</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section (Ordering Showcase) -->
+  <section id="menu" class="menu-section">
+    <div class="section-header">
+      <span class="subtitle">SEASONAL CREATIONS</span>
+      <h2>เมนูซิกเนเจอร์ประจำฤดูกาล</h2>
+      <p class="section-desc">กดสั่งจานโปรดเพื่อเพิ่มลงในรายการชิมของคุณวันนี้</p>
+    </div>
+
+    <div class="menu-grid">
+      <article class="menu-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Truffle Ribeye Steak">
+          <span class="category-tag">Main Course</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h3>Truffle A5 Wagyu Tenderloin</h3>
+            <span class="price">฿ 2,850</span>
+          </div>
+          <p class="card-desc">เนื้อวากิวระดับ A5 ย่างเตาถ่านถ่านไม้หอม เสิร์ฟพร้อมซอสทรัฟเฟิลดำเข้มข้น</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Truffle A5 Wagyu Tenderloin', 2850)">
+            <i class="fa-solid fa-plus"></i> เพิ่มลงรายการ
+          </button>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=800&auto=format&fit=crop" alt="Hokkaido Scallop Carpaccio">
+          <span class="category-tag">Appetizer</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h3>Hokkaido Scallop Carpaccio</h3>
+            <span class="price">฿ 1,250</span>
+          </div>
+          <p class="card-desc">หอยเชลล์ฮอกไกโดแล่บาง ราดน้ำมันมะกอกเอ็กซ์ตร้าเวอร์จิ้น ยูซุ และไข่ปลาคาเวียร์</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Hokkaido Scallop Carpaccio', 1250)">
+            <i class="fa-solid fa-plus"></i> เพิ่มลงรายการ
+          </button>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800&auto=format&fit=crop" alt="Emerald Forest Parfait">
+          <span class="category-tag">Dessert</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h3>Emerald Forest Parfait</h3>
+            <span class="price">฿ 650</span>
+          </div>
+          <p class="card-desc">มูสมัทฉะเกียวโตพรีเมียม ครัมเบิ้ลพิสตาชิโอ ไอศกรีมเกลือหิมาลายันและทองคำเปลวบริสุทธิ์</p>
+          <button class="add-to-cart-btn" onclick="addToCart('Emerald Forest Parfait', 650)">
+            <i class="fa-solid fa-plus"></i> เพิ่มลงรายการ
+          </button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section id="reservation" class="reservation-section">
+    <div class="reservation-card">
+      <div class="reservation-info">
+        <span class="subtitle light">TABLE RESERVATION</span>
+        <h2>สำรองโต๊ะพิเศษสำหรับคุณ</h2>
+        <p>ให้ทุกมื้อสำคัญของคุณเต็มไปด้วยความประทับใจและความเป็นส่วนตัวสูงสุด กรุณาจองล่วงหน้าอย่างน้อย 24 ชั่วโมง</p>
+        
+        <div class="contact-highlights">
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>888 Verdant Avenue, Gourmet District, Bangkok</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+66 (0) 2 999 8888</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="reservation-form" onsubmit="handleReservation(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-name">ชื่อผู้จอง</label>
+            <input type="text" id="res-name" placeholder="คุณสมชาย ใจดี" required>
+          </div>
+          <div class="form-group">
+            <label for="res-phone">เบอร์ติดต่อ</label>
+            <input type="tel" id="res-phone" placeholder="081-234-5678" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-date">วันที่</label>
+            <input type="date" id="res-date" required>
+          </div>
+          <div class="form-group">
+            <label for="res-guests">จำนวนแขก</label>
+            <select id="res-guests">
+              <option value="2">2 ท่าน (Romantic Dining)</option>
+              <option value="4">4 ท่าน (Family & Friends)</option>
+              <option value="8">8+ ท่าน (Private Suite)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="res-note">คำขอพิเศษ (การแพ้อาหาร / โอกาสพิเศษ)</label>
+          <input type="text" id="res-note" placeholder="เช่น วันเกิด, ไม่รับอาหารทะเล">
+        </div>
+
+        <button type="submit" class="btn-reserve-submit">
+          <span>ยืนยันการสำรองโต๊ะ</span>
+          <i class="fa-solid fa-check"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Shopping Drawer Modal -->
+  <div class="cart-drawer-overlay" id="cart-drawer">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3><i class="fa-solid fa-bag-shopping"></i> รายการสั่งซื้อของคุณ</h3>
+        <button class="close-drawer-btn" id="close-cart-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="cart-items-container" id="cart-items">
+        <p class="empty-msg">ยังไม่มีรายการที่เลือก</p>
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-total-row">
+          <span>ยอดรวมทั้งหมด</span>
+          <strong id="cart-total-price">฿ 0</strong>
+        </div>
+        <button class="btn-checkout" onclick="checkout()">
+          <span>ดำเนินการชำระเงิน</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="brand-logo footer-logo">
+          <i class="fa-solid fa-leaf"></i>
+          <span>VERDANT</span>
+        </div>
+        <p>สร้างสรรค์ประสบการณ์แห่งรสชาติด้วยศาสตร์อาหารชั้นสูงและความพิถีพิถันในทุกรายละเอียด</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>เวลาเปิดทำการ</h4>
+        <p>อังคาร - ศุกร์: 17:30 - 23:00</p>
+        <p>เสาร์ - อาทิตย์: 12:00 - 15:00, 18:00 - 23:30</p>
+        <p><em>(ปิดบริการทุกวันจันทร์)</em></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>การเชื่อมต่อ</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-line"></i></a>
+        </div>
+        <p class="copyright">© 2026 VERDANT Dining Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdant Dining - สมัครสมาชิกคลับกูร์เมต์</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="rege.css">
+</head>
+<body>
+  <!-- Ambient Background Accents -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <main class="register-container">
+    <!-- Brand Visual Panel -->
+    <section class="brand-panel">
+      <div class="brand-overlay"></div>
+      
+      <div class="brand-top">
+        <div class="brand-badge">
+          <i class="fa-solid fa-crown"></i>
+          <span>Privilege Member</span>
+        </div>
+        <h1 class="brand-title">VERDANT</h1>
+        <p class="brand-tagline">เข้าร่วมครอบครัวกูร์เมต์ รับสิทธิ์จองโต๊ะพิเศษ และคอร์สเมนูซีซันนอลก่อนใคร</p>
+      </div>
+
+      <!-- Member Perks Highlights -->
+      <div class="brand-perks">
+        <div class="perk-item">
+          <div class="perk-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+          <div class="perk-text">
+            <strong>Welcome Drink & Dining Credit</strong>
+            <span>รับเครื่องดื่มต้อนรับและเครดิตส่วนลดทันที</span>
+          </div>
+        </div>
+        <div class="perk-item">
+          <div class="perk-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="perk-text">
+            <strong>Priority Table Booking</strong>
+            <span>จองโต๊ะวิวพิเศษและห้อง Private ล่วงหน้า</span>
+          </div>
+        </div>
+        <div class="perk-item">
+          <div class="perk-icon"><i class="fa-solid fa-gift"></i></div>
+          <div class="perk-text">
+            <strong>Chef's Table on Birthday</strong>
+            <span>เซอร์ไพรส์คอร์สขนมหวานในเดือนเกิดของคุณ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-footer">
+        <span>© 2026 Verdant Culinary Experience</span>
+      </div>
+    </section>
+
+    <!-- Form Panel -->
+    <section class="form-panel">
+      <header class="form-header">
+        <h2>สร้างบัญชีสมาชิก</h2>
+        <p>กรอกข้อมูลเพื่อเริ่มต้นสัมผัสความประณีตระดับเวิลด์คลาส</p>
+      </header>
+
+      <form class="auth-form" onsubmit="event.preventDefault();">
+        
+        <!-- Full Name -->
+        <div class="input-grid">
+          <div class="input-group">
+            <label for="firstname">ชื่อ</label>
+            <div class="input-wrapper">
+              <i class="fa-regular fa-user input-icon"></i>
+              <input type="text" id="firstname" placeholder="สมชาย" required>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="lastname">นามสกุล</label>
+            <div class="input-wrapper">
+              <i class="fa-regular fa-user input-icon"></i>
+              <input type="text" id="lastname" placeholder="ใจดี" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Fields -->
+        <div class="input-group">
+          <label for="email">อีเมล</label>
+          <div class="input-wrapper">
+            <i class="fa-regular fa-envelope input-icon"></i>
+            <input type="email" id="email" placeholder="somchai@example.com" required>
+          </div>
+        </div>
+
+        <div class="input-grid">
+          <div class="input-group">
+            <label for="phone">เบอร์โทรศัพท์</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-phone input-icon"></i>
+              <input type="tel" id="phone" placeholder="081-234-5678" required>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="birthday">วันเกิด (รับสิทธิ์เดือนเกิด)</label>
+            <div class="input-wrapper">
+              <i class="fa-regular fa-calendar input-icon"></i>
+              <input type="date" id="birthday">
+            </div>
+          </div>
+        </div>
+
+        <!-- Password Fields -->
+        <div class="input-group">
+          <label for="password">รหัสผ่าน</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock input-icon"></i>
+            <input type="password" id="password" placeholder="อย่างน้อย 8 ตัวอักษร" required>
+          </div>
+          <!-- Strength Bar UI -->
+          <div class="strength-meter">
+            <div class="strength-bar"><div class="fill medium"></div></div>
+            <span class="strength-text">ระดับความปลอดภัย: แนะนำให้มีตัวพิมพ์ใหญ่และตัวเลข</span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-shield-halved input-icon"></i>
+            <input type="password" id="confirm-password" placeholder="พิมพ์รหัสผ่านอีกครั้ง" required>
+          </div>
+        </div>
+
+        <!-- Terms Agreement -->
+        <div class="form-options">
+          <label class="custom-checkbox">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+            ฉันยอมรับ <a href="#">ข้อกำหนดการใช้งาน</a> และ <a href="#">นโยบายความเป็นส่วนตัว</a>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <span>ยืนยันการสมัครสมาชิก</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </form>
+
+      <footer class="form-footer">
+        <p>มีบัญชีสมาชิกอยู่แล้ว? <a href="login.html">เข้าสู่ระบบที่นี่</a></p>
+        <script src="auth.js"></script>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
