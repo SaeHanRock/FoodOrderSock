@@ -1,0 +1,97 @@
+:root {
+  --color-primary-dark: #071e17;
+  --color-primary: #0f382c;
+  --color-primary-light: #1b5e4b;
+  --color-accent: #52b788;
+  --color-bg: #04130e;
+  --color-text-main: #14211d;
+  --color-text-muted: #64766f;
+  --color-border: #e8eee9;
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans Thai', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  padding: 2rem 1rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+}
+.orb-1 { width: 450px; height: 450px; background: radial-gradient(circle, var(--color-primary-light) 0%, transparent 70%); top: -10%; left: -5%; opacity: 0.6; }
+.orb-2 { width: 500px; height: 500px; background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%); bottom: -15%; right: -5%; opacity: 0.3; }
+
+.receipt-wrapper { position: relative; z-index: 1; width: 100%; max-width: 520px; }
+.receipt-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.status-badge {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  background: #e8f7ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: #2d6a4f;
+  font-size: 2rem;
+}
+.icon-pulse {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid var(--color-accent);
+  opacity: 0.4;
+  animation: pulse 2s infinite ease-out;
+}
+@keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+.brand-tag { font-family: var(--font-serif); font-size: 0.75rem; letter-spacing: 3px; color: var(--color-accent); font-weight: 700; display: block; margin-bottom: 0.4rem; }
+.receipt-header h1 { font-size: 1.75rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.4rem; }
+.receipt-header p { font-size: 0.92rem; color: var(--color-text-muted); margin-bottom: 2rem; }
+
+.receipt-details { background: #f8faf9; border-radius: 16px; padding: 1.25rem 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; text-align: left; }
+.detail-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.88rem; }
+.detail-row span { color: var(--color-text-muted); }
+.detail-row strong { color: var(--color-primary-dark); font-weight: 600; }
+.badge-success { background: #d8f3dc; color: #1b4332; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 50px; }
+
+.divider { border-top: 1px dashed var(--color-border); margin: 1.5rem 0; }
+.order-list { display: flex; flex-direction: column; gap: 0.8rem; text-align: left; }
+.item-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; }
+.item-row .name { color: var(--color-primary-dark); font-weight: 500; }
+.item-row .price { color: var(--color-primary-light); font-weight: 600; }
+
+.total-row { display: flex; justify-content: space-between; align-items: center; font-size: 1.05rem; text-align: left; }
+.total-row span { font-weight: 600; color: var(--color-primary-dark); }
+.total-row strong { font-size: 1.4rem; color: var(--color-primary-light); font-weight: 700; }
+
+.receipt-actions { display: grid; grid-template-columns: 1fr 1.2fr; gap: 1rem; margin-top: 2rem; }
+.btn-secondary { padding: 0.85rem; border-radius: 12px; border: 1.5px solid var(--color-border); background: #ffffff; color: var(--color-primary-dark); font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+.btn-primary { padding: 0.85rem; border-radius: 12px; border: none; background: var(--color-primary); color: #ffffff; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+
+.receipt-footer { margin-top: 1.8rem; font-size: 0.8rem; color: var(--color-text-muted); }

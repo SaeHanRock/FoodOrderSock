@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERDANT - การชำระเงินสำเร็จ</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="success.css">
+</head>
+<body>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <main class="receipt-wrapper">
+    <div class="receipt-card">
+      
+      <div class="status-badge">
+        <div class="icon-pulse"></div>
+        <i class="fa-solid fa-check"></i>
+      </div>
+
+      <header class="receipt-header">
+        <span class="brand-tag">VERDANT GASTRONOMY</span>
+        <h1>การชำระเงินสำเร็จ</h1>
+        <p>ห้องครัวได้รับรายการอาหารของท่านเรียบร้อยแล้ว</p>
+      </header>
+
+      <div class="receipt-details">
+        <div class="detail-row">
+          <span>รหัสคำสั่งซื้อ</span>
+          <strong id="order-id">#VD-88921</strong>
+        </div>
+        <div class="detail-row">
+          <span>วันที่และเวลา</span>
+          <strong id="order-date">-</strong>
+        </div>
+        <div class="detail-row">
+          <span>ช่องทางชำระเงิน</span>
+          <strong>PromptPay / Credit Card (จำลอง)</strong>
+        </div>
+        <div class="detail-row">
+          <span>สถานะ</span>
+          <span class="badge-success">ชำระแล้ว</span>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="order-list" id="receipt-items"></div>
+
+      <div class="divider"></div>
+
+      <div class="total-row">
+        <span>ยอดชำระสุทธิ</span>
+        <strong id="receipt-total">฿ 0</strong>
+      </div>
+
+      <div class="receipt-actions">
+        <button onclick="window.print()" class="btn-secondary">
+          <i class="fa-solid fa-print"></i>
+          <span>พิมพ์ใบเสร็จ</span>
+        </button>
+        <a href="index.html" class="btn-primary">
+          <span>กลับสู่หน้าหลัก</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <footer class="receipt-footer">
+        <p>ขอบพระคุณที่ร่วมสัมผัสประสบการณ์ไฟน์ไดนิ่งกับเรา</p>
+      </footer>
+    </div>
+  </main>
+
+  <script src="success.js"></script>
+</body>
+</html>

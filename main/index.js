@@ -89,15 +89,23 @@ function removeFromCart(index) {
   updateCartUI();
 }
 
+// ดำเนินการชำระเงิน -> บันทึกข้อมูลและส่งต่อไปหน้าใบเสร็จ
 function checkout() {
   if (cart.length === 0) {
     alert('กรุณาเลือกรายการเมนูก่อนดำเนินการ');
     return;
   }
-  alert(`ขอบคุณสำหรับคำสั่งซื้อ! รายการอาหารรวม ${cart.length} รายการ ถูกส่งไปยังห้องครัวเรียบร้อย`);
+
+  // บันทึกรายการล่าสุดลง LocalStorage เพื่อให้หน้า success.html ดึงไปแสดง
+  localStorage.setItem('verdant_last_order', JSON.stringify(cart));
+  
+  // ล้างตะกร้า
   cart = [];
   updateCartUI();
   document.getElementById('cart-drawer')?.classList.remove('open');
+
+  // นำทางไปหน้าชำระเงินสำเร็จ
+  window.location.href = 'success.html';
 }
 
 // ระบบจองโต๊ะ
