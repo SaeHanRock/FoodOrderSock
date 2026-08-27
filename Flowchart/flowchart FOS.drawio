@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="หน้า-1" id="Fh2V7UlC32yYmmaLSwJ7">
+    <mxGraphModel dx="1178" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-3" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="start" vertex="1">
+          <mxGeometry height="40" width="93" x="367" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-7" edge="1" parent="1" source="9yCn8ZS-M3ccysDtAaxw-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="9yCn8ZS-M3ccysDtAaxw-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Login/Register" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-5" edge="1" parent="1" source="9yCn8ZS-M3ccysDtAaxw-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=20;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="9yCn8ZS-M3ccysDtAaxw-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-13" edge="1" parent="1" source="9yCn8ZS-M3ccysDtAaxw-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="9yCn8ZS-M3ccysDtAaxw-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ค้นหาเมนูอาหาร" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-14" edge="1" parent="1" source="9yCn8ZS-M3ccysDtAaxw-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="9yCn8ZS-M3ccysDtAaxw-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="กดสั่งอาหาร" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ชำระเงิน" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-11" parent="1" style="shape=display;whiteSpace=wrap;html=1;" value="ขึ้นสถานะจัดส่ง" vertex="1">
+          <mxGeometry height="40" width="140" x="336" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-12" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="End" vertex="1">
+          <mxGeometry height="40" width="93" x="367.5" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-15" edge="1" parent="1" source="9yCn8ZS-M3ccysDtAaxw-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=77.5;entryDy=0;entryPerimeter=0;" target="9yCn8ZS-M3ccysDtAaxw-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9yCn8ZS-M3ccysDtAaxw-16" edge="1" parent="1" source="9yCn8ZS-M3ccysDtAaxw-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=77.5;exitDy=40;exitPerimeter=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=-20;entryPerimeter=0;" target="9yCn8ZS-M3ccysDtAaxw-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
